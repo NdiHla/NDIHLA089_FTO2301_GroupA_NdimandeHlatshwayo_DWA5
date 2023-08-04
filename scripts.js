@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
       throw new Error ('Invalid number');
     }
 
-    if (Number.isNaN(Number(dividend)) || Number.isNaN(Number(divider))) {
+    if (isNaN(Number(dividend)) || isNaN(Number(divider))) {
       document.querySelector('body').innerText = 'Something critical went wrong. Please reload the page';
       throw new Error ('(CRITICAL) Input not a number');
     }
